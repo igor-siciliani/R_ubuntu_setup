@@ -1,5 +1,5 @@
 # Install for Data Science
-Guide to install R version on Ubuntu 18.04.
+Guide 2020 to install R version on Ubuntu 18.04.
 Open your linux terminal to run this guide and follow the next steps.
 
 ### verify your ubuntu distribution
@@ -8,7 +8,11 @@ Open your linux terminal to run this guide and follow the next steps.
 lsb_release -a
 ```
 
-### choose R version to install on https://cloud.r-project.org/bin/linux
+### choose R version to 
+In the Apache server https://cloud.r-project.org/bin/linux 
+ou can choose which version of R you want to install 
+according to your linux distribution.
+
 
 ```
 sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
@@ -112,4 +116,41 @@ sudo apt-get update && sudo apt-get install -y \
 libgsl-dev \
 libudunits2-dev
 ```
+
+## Install Anaconda Environment (Optional)
+
+To use GUI packages with Linux, you will need to install the following extended dependencies for Qt:
+
+```
+sudo apt-get update && sudo apt-get install -y \
+libgl1-mesa-glx \
+libegl1-mesa \
+libxrandr2 \
+libxrandr2 \
+libxss1 \
+libxcursor1 \
+libxcomposite1 \
+libasound2 \
+libxi6 \
+libxtst6
+```
+Switch to the /tmp directory and use curl to download the installer using your command terminal:
+```
+cd /tmp
+wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+```
+Checksum is a security tool used to verify the authenticity and integrity of a downloaded script.
+
+Enter the following:
+
+```
+sha256sum Anaconda3–2020.02–Linux–x86_64.sh
+```
+
+The Anaconda installer is a bash script. To run the installation script, use the command:
+
+```
+bash Anaconda3-2020.02-Linux-x86_64.sh
+```
+
 
