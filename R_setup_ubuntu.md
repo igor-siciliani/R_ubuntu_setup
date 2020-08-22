@@ -1,5 +1,5 @@
 # Install for Data Science
-Guide 2020 to install R version on Ubuntu 18.04.
+Guide to install R version on Ubuntu 18.04.
 Open your linux terminal to run this guide and follow the next steps.
 
 ### verify your ubuntu distribution
